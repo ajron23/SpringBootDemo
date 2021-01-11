@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Random quote</title>
+<title>MarkoCarko</title>
 </head>
 <body>
 	Marko Carkooooooo markoapp
