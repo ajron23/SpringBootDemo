@@ -3,6 +3,7 @@ package com.sbs.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 //@RestController
 @Controller
@@ -15,8 +16,9 @@ public class MarkoController {
 	}
 	
 	@RequestMapping("/marko")
-	public String prikaziHome() {
-		return "home";
+	public ModelAndView prikaziHome() {
+		ModelAndView mv = new ModelAndView("home");
+		return mv;
 		//return "Cao breeeeeeeee";
 	}
 
