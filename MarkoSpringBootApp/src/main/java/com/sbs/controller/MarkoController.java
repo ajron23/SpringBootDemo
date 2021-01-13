@@ -17,7 +17,7 @@ public class MarkoController {
 	
 	@RequestMapping("/marko")
 	public ModelAndView prikaziHome() {
-		ModelAndView mv = new ModelAndView("home");
+		ModelAndView mv = new ModelAndView("home2");
 		return mv;
 		//return "Cao breeeeeeeee";
 	}
