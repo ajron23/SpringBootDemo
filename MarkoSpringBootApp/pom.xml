@@ -38,11 +38,6 @@
 		</dependency>
 		
 		<dependency>
-		    <groupId>org.apache.tomcat</groupId>
-		    <artifactId>tomcat-jasper</artifactId>
-		    <version>9.0.37</version>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
@@ -52,6 +47,7 @@
 		</dependency>
 	</dependencies>
 	
+	<!--  
 	<profiles>
 		<profile>
 	      <id>openshift</id>
@@ -87,9 +83,10 @@
 	      </build>
 	    </profile>
 	</profiles>
-
+-->
 	<build>
 		<plugins>
+			<!--  
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -101,6 +98,20 @@
 		          </execution>
 		        </executions>
 			</plugin>
+			-->
+			<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>default-war</id>
+                    <phase>prepare-package</phase>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 		</plugins>
 	</build>
 
