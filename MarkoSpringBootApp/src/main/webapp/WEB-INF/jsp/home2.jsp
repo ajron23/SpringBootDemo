@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>MarkoCarko</title>
 </head>
-<body>
+<body style="background-color:powderblue;">
 	Idemo breeeeeeee
 </body>
 </html>
